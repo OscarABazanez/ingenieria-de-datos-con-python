@@ -1,16 +1,36 @@
-news_sites :
-  eluniversal :
-    url : https://www.eluniversal.com.mx/
-    queries :
-      homepage_article_links: 'h2[class ~= "uniplus"] a[target = _self]'
-  elpais :
-    url : https://www.elpais.com/
-    queries :
-      homepage_article_links : 'h2[class ~= headline] > a'
-  reforma :
-    url : https://www.reforma.com/
-    queries :
-      homepage_article_links : 'h1 a[class ~= ligaonclick]'
+# news_sites :
+#   eluniversal :
+#     url : https://www.eluniversal.com.mx
+#     queries :
+#       homepage_article_links: '.titulo a'
+#       article_body: '.field-name-body'
+#       article_title: 'h1'
+#   elpais :
+#     url : https://www.elpais.com/
+#     queries :
+#       homepage_article_links : 'h2[class ~= headline] > a'
+#       article_body:'#ctn_article_body p'
+#       article_title:'h1[class ~="a_t"]'
+#   reforma :
+#     url : https://www.reforma.com/
+#     queries :
+#       homepage_article_links : 'h1 a[class ~= ligaonclick]'
+#       article_body:''
+#       article_title:''
+
+news_sites:
+  eluniversal:
+    url: https://www.eluniversal.com.mx
+    queries:
+      homepage_article_links: '.titulo a'
+      article_body: '.field-name-body'
+      article_title: 'h1'
+  elpais:
+    url: https://elpais.com
+    queries:
+      homepage_article_links: 'h2[class ~= headline] > a'
+      article_body: '#ctn_article_body p'
+      article_title: 'h1'
 # news_sites:
 #   reforma:
 #     url: https://www.reforma.com/

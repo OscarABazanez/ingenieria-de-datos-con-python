@@ -11,4 +11,3 @@ def config():
             __config = yaml.safe_load(f)
 
     return __config
-
